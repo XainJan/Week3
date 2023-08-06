@@ -1,0 +1,47 @@
+.qa{
+    
+    .qa-container{
+        max-width: 856px;   
+        padding: 96px 0 80px 0;
+        @include lg(){
+            padding: 80px 0;
+        }
+        @include md(){
+            padding: 40px 0 64px 0;
+        }
+    }
+    h1{
+        @include md(){
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+        border-left:8px solid #9F1213;
+        padding-left: 16px;
+        line-height: 72px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    h2{
+        line-height: 36px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    ul{
+        >li:nth-child(odd){
+            line-height: 30px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        >li:nth-child(1)~li:nth-child(odd) {
+            margin-top: 32px;
+            @include md(){
+                margin-top: 24px;
+            }
+        }
+        >li:nth-child(even){
+            line-height: 24px;
+        }
+   
+    }
+}

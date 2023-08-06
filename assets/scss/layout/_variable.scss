@@ -1,0 +1,47 @@
+$font-size:(
+  14:14px,
+  16:16px,
+  18:18px,
+  19:19px,
+  20:20px,
+  24:24px,
+  32:32px,
+  36:36px,
+  42:42px,
+  48:48px,
+  64:64px,
+);
+@each $num , $size in $font-size{
+    .fs-#{$num}{
+        font-size: $size;
+    }
+}
+
+$color:(
+    primary:#AA0601,
+    secondary:#650300,
+    my-rose:#FBF2F2,
+    dm-gray:#707070,
+    white:#fff,
+
+);
+@each $colorName , $textColor in $color{
+    .#{$colorName}{
+        color: $textColor;
+    }
+}
+
+$bg:(
+    bg-primary:#AA0601,
+    bg-secondary:#650300,
+    bg-rose:#FBF2F2,
+    bg-white:#fff,
+    bg-brown:#5F3E2D,
+    bg-maroon:#B75929,
+    bg-black:#000000,
+);
+@each $bg-color-name , $bgColor in $bg{
+    .#{$bg-color-name}{
+        background-color:$bgColor ;
+    }
+}

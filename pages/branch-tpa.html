@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./layout/google-font'); -%>
+    <title>眼鏡官網</title>
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+
+    <div class="branch">
+        <div class="container">
+            <h1 class="fs-48">門市據點</h1>
+            <div class="location d-flex">
+                <p class="fs-24">選擇分店</p>
+                <div class="box">
+                    <select>
+                        <option>台北中山旗艦店</option>
+                        <option>台北綠園店</option>
+                        <option>台中清水旗艦店</option>
+                        <option>高雄中正形象店</option>
+                        <option>高雄夢時代店</option>
+                    </select>
+                </div>
+            </div>
+            <div class="address d-flex flex-wrap">
+                <ul class="branch-card">
+                    <li><img src="../assets/images/store-1.png" alt=""></li>
+                        <h2 class="fs-24">台北中山旗艦店</h2>
+                        <ul class="fs-20">
+                            <li><span class="material-symbols-outlined">call</span><a href="tel:+886-2-00012634">電話：(02)000-1234</a></li>
+                            <li><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</li>
+                            <li class="d-flex"><span class="material-symbols-outlined">location_on</span><p>地址：台北市中山區南京東路25巷2-1號</p></li>
+                        </ul>
+                </ul>
+
+                <div class="address-lg">
+                    <h2 class="fs-24">台北中山旗艦店</h2>
+                    <ul class="fs-20">
+                        <li><span class="material-symbols-outlined">call</span><a href="tel:+886-2-00012634">電話：(02)000-1234</a></li>
+                        <li><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</li>
+                        <li class="d-flex"><span class="material-symbols-outlined">location_on</span><p>地址：台北市中山區南京東路25巷2-1號</p></li>
+                    </ul>
+                </div>
+
+                <div class="address-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636121641497!2d121.53529517691537!3d25.052271037552707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1691225562087!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="address-map-lg ">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4636121641497!2d121.53529517691537!3d25.052271037552707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1691225562087!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

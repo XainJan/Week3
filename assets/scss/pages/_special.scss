@@ -1,0 +1,117 @@
+.special{
+    padding:24px 0 80px 0 ;
+    @include md(){
+        padding:16px 0 24px 0;
+    }
+    .special-card{
+        margin-bottom: 40px;
+        @include md(){
+            margin-bottom: 16px;
+        }
+    }
+}
+.breadcrumb{
+    margin-bottom: 8px;
+    ul{
+        line-height: 24px;
+        >li:not(:last-child)::after{
+            content:"/";
+            margin: 0 3px;   
+        }
+        >li:last-child{
+            color: #AA0601;
+        }
+    }
+}
+
+.left-content{
+    h3{
+        @include md(){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        margin-bottom: 8px;
+        font-weight: bold;
+        line-height: 36px;
+        span:first-child{
+            margin-right: 16px;
+        }
+
+    }
+    h1{
+        @include md(){
+            font-size: 24px;
+            line-height: 36px;
+        }
+        line-height: 72px;
+
+    }
+    h2{
+        @include md(){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        line-height: 36px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    .specail-txt{
+        margin-top: 8px;
+        line-height: 24px;
+    }
+    .share{
+        @include md(){
+            display: none;
+        }
+        margin-bottom: 24px;
+        padding-bottom: 16px;
+        line-height: 24px;
+        border-bottom: 1px solid #707070;
+        ul{
+            >li:nth-child(2){
+                margin: 0 16px;
+            }
+        }
+    }
+    .link-page{
+        @include md(){
+            display: none;
+        }
+    }
+}
+.right-tags{
+    @include md(){
+        display: none;
+    }
+    margin-left: 24px;
+    h2{
+        @include lg(){
+            font-size: 16px;
+            line-height: 24px;
+        }
+        margin-top: 52px;
+    }
+    span{
+        @include lg(){
+            font-size: 16px;
+        }
+        font-size: 38px;
+        vertical-align: middle;
+    }
+    ul{
+      
+        >li{
+            @include lg(){
+                font-size: 16px;
+                line-height: 24px;
+            }
+            line-height: 36px;
+        }
+        >li:not(:last-child){
+            @include lg(){
+                margin-right: 16px;
+            }
+            margin-right: 24px;
+        }
+    }
+}

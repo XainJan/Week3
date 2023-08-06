@@ -1,5 +1,19 @@
+@import './layout/variable';
+@import './pages/reset.scss';
+@import './layout/mixin.scss';
+@import './layout/base.scss';
+@import './layout/utilities.scss';
+
+
 @import './layout/header.scss';
+@import './layout/style-nav.scss';
 @import './layout/footer.scss';
 
 
 @import './pages/index.scss';
+@import './pages/style.scss';
+@import './pages/branch.scss';
+@import './pages/branch-tpa.scss';
+@import './pages/question.scss';
+@import './pages/blog.scss';
+@import './pages/special.scss';

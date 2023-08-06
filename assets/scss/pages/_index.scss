@@ -1,3 +1,321 @@
-.index-title {
-  font-size: 100px;
+.cover{
+  background-image: url(../images/home-header.png);
+  height: 787px;
+  @include md(){
+    height: 396px;
+  }
+  >div{
+      height: 100%;
+      }
+  .text-1{
+
+      >p{
+          height: 54px;
+          @include md(){
+            font-size: 16px;
+          }
+      }
+      >h1{
+          height: 96px;
+          @include md(){
+            font-size: 24px;
+          }
+      }    
+  }
+  .button{
+      width:104px;
+      height: 41px;
+      padding: 6px 12px 6px 12px;
+      >a{
+          line-height: 29px;
+      }
+  }
+  @include lg(){
+    background-image: url(../images/home-header-sm.png)
+  }
+  @include md(){
+    
+  }
+}
+.central{
+  padding: 80px 0;
+  
+  .title{
+      width:100%;
+      line-height: 72px;
+      h2{
+          margin-bottom: 32px;
+          @include md(){
+            font-size: 24px ;
+            line-height: 36px;
+            text-align: center;
+          }
+      }
+  }
+  .cont{
+      width:100%;
+        .pic-txt{
+            width: 306px;
+            >img{
+                width: 80px;
+            }
+            >h2{
+                line-height: 36px;
+                margin: 24px 0 8px 0;
+            }
+            >p{
+                line-height: 24px;
+            }
+            @include lg(){
+              width: 336px;
+            }
+            @include md(){
+              width: 348px;
+            }
+            @include md(){
+              margin-bottom:30px ;
+            }
+        }
+      @include lg(){
+        .pic-txt:nth-child(2),.pic-txt:nth-child(1){
+          margin-bottom: 49px;
+        }
+        .pic-txt:nth-child(1),.pic-txt:nth-child(3){
+          margin-right: 24px;
+        }
+        justify-content: center;
+        flex-wrap: wrap;
+      }  
+      @include md(){
+       flex-direction: column;
+       align-content: center;
+       .pic-txt:nth-child(1),.pic-txt:nth-child(3){
+        margin-right:0;
+      }
+      }
+   }
+  @include md(){
+    padding:40px 0;
+  }
+}
+.series{
+  padding: 80px 0;
+  .title{
+      line-height: 72px;
+      margin-bottom: 48px;
+  }
+  .series-cont{
+      width:100%;
+      .series-pic{
+          width: 416px;
+          >img{
+              margin-bottom: 8px;
+          }
+          >p{
+              font-weight: 900;
+              font-style: italic;
+              line-height: 72px;
+          }
+          @include lg(){
+            width: 336px;
+          }
+          @include md(){
+            width: 348px;
+          }
+      }
+      @include lg(){
+        flex-direction: column;
+        align-items: center;
+        .series-pic:not(:last-child){
+          margin-bottom: 24px;
+        }
+        
+      }
+  }
+}
+.brand{
+  background-image: url(../images/index-bg.png);
+  background-repeat: no-repeat;
+  height: auto;
+  padding: 80px 0;
+  @include md(){
+    padding: 40px 0;
+  }
+}
+.brand-title{
+  >h2{
+      line-height: 72px;
+      margin-bottom: 48px;
+      @include md(){
+        font-size: 24px;
+      }
+  }
+}
+.style{
+  .sty-cont{
+    max-width:648px ;
+      >p{
+          line-height:88px;
+          font-style: italic;
+      }
+      @include lg(){
+        max-width:696px ;
+        margin-bottom: 24px;
+      }
+  }
+  @include lg(){
+    flex-direction: column;
+  }
+}
+.recommend{
+  padding: 80px 0;
+  @include md(){
+    padding: 40px 0;
+  }
+}
+.rec-title{
+  >h2{
+      line-height: 72px;
+      margin-bottom: 48px;
+      @include md (){
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 24px;
+      }
+  }
+}
+.rec-pic{
+  width: 100%;
+  .rec-cont{
+      max-width: 306px;
+      height: 511px;
+      border-radius: 4px;
+      border:1px solid #DEE2E6;
+      box-shadow: 0 2px 6px #00000029;
+      ul{
+          height: 100%;
+          padding:16px;
+          >li:nth-child(1){
+              margin-bottom: 8px;
+          }
+          >li:not(:nth-child(3)){
+              line-height: 24px;
+          }
+          >li:nth-child(3){
+              line-height: 21px;
+              bottom: 16px;
+          }
+      }
+      @include lg(){
+        max-width: 314px;
+        margin: 0 12px;
+        
+      }
+  }
+  @include lg(){
+    .rec-cont:first-child{
+      margin-bottom: 24px;
+    }
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @include md (){
+    .rec-cont:not(:last-child){
+      margin: 0 0 16px 0 ;
+    }
+      margin-bottom: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.connect{
+  width: 100%;
+  padding: 80px 0;
+  height: auto;
+  @include md(){
+    padding: 40px 0;
+  }
+}
+.in-container{
+  max-width: 636px;
+  height:100%;
+  .connert-title{
+      h2{
+          line-height: 72px;
+          margin-bottom: 48px;
+          @include md(){
+            font-size: 24px;
+            line-height: 36px;
+          }
+      }
+      p{
+          line-height: 30px;
+          margin-bottom: 24px;
+          @include md(){
+            font-size: 16px ;
+            line-height: 24px;
+          }
+      }
+  }
+  .connect-input{
+      width: 100%;
+      form{
+          width: 100%;
+
+          >input:not(:nth-child(9)){
+              width: 100%;
+              display: block;
+              line-height: 24px;
+              padding:6px 12px ;
+              border: 1px solid #000;
+              margin-bottom: 16px;
+              
+          }
+          >textarea{
+              width: 100%;
+              height: 136px;
+              resize: none;
+              margin-bottom: 16px;
+              padding: 6px 12px 6px 12px;
+          }
+          >label:not(:nth-child(10)){
+              width: 100%;
+              display: block;
+              line-height: 24px;
+              margin-bottom: 8px;
+          }
+          >label:nth-child(10){
+              line-height: 24px;
+              margin-bottom: 48px;
+          }
+
+          >input:nth-child(11){
+              width: 348px;
+              height: 56px;
+              margin: 0 auto;
+              border: none;
+              margin-top: 48px;
+              @include lg(){
+                width: 336px;
+              }
+              @include md(){
+               max-width: 100%;
+              }
+              &:hover{
+                  cursor: pointer;
+              }
+          }
+          .send{
+              &:hover{
+                  background-color:  #650300;
+              }
+          }
+      }
+  }
+  @include lg(){
+    max-width: 576px;
+  }
+  @include md(){
+    padding: 0 14px;
+  }
 }

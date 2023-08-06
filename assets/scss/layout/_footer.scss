@@ -1,4 +1,115 @@
 .footer{
-  background: #69F0AE;
-  font-size: 64px;
+  height:353px ;
+  padding: 56px 0 0 0;
+  @include md(){
+    height: 232px;
+    padding: 24px 0 0 0;
+  }
+  .about{
+      height: 48px;
+      margin-bottom: 24px;
+      .link{
+          width: 464px;
+          ul{
+              height: 100%;
+          }
+      }
+      .icon{
+          width:208px;
+
+          img{
+              height: 48px;
+              @include lg(){
+                height: 40px;
+              }
+          }
+          @include lg(){
+            width:152px
+          }
+      }
+      @include md(){
+        display: none;
+      }
+  }
+  .tel{
+    span{
+      @include md(){
+        font-size: 18px;
+        padding: 4px 0;
+      }
+    }
+      line-height:54px;
+      margin-bottom: 8px;
+      p{
+          margin-left: 20px;
+          @include md(){
+            margin-left: 11px;
+          }
+      }
+      .icon{   
+        display: none; 
+        width: 88px;   
+        img{
+            height: 24px;
+        }
+        @include md(){
+          display: flex;
+        }
+    }
+    @include md(){
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .mail{
+    span{
+      @include md(){
+        font-size: 18px;
+        padding: 4px 0;
+      }
+    }
+      line-height: 54px;
+      position: relative;
+      margin-bottom: 64px;
+      @include md(){
+        margin-bottom: 40px;
+      }
+      p{
+          margin-left: 20px;
+          @include md(){
+            margin-left: 11px;
+          }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            border: 1px solid #fff;
+            left: 0;
+            bottom: -32px;
+            @include md(){
+              bottom:-24px;
+            }
+        }
+        @include md(){
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+  }
+  .sm{
+    @include md(){
+      flex-direction: column;
+      line-height: 24px;
+      font-size: 16px;
+    }
+    .sm-l{
+      a:first-child{
+          margin-right:48px ;
+      } 
+      @include md(){
+        flex-direction: column;
+      }
+    }
+  }
 }

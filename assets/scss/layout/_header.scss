@@ -1,4 +1,44 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+
+.nav{
+  font-family: serif;
+  height:auto;
+  padding: 16px 0;
+  @include md(){
+    padding: 12px 0;
+  }
+
+  >div{
+      >a{
+       width:80px;
+     
+      }
+      height: 100%;
+      >ul{
+          width:492px ;
+          
+          @include md(){
+            display: none;
+          }
+      }
+  }
+ 
+}
+.md-nav{
+  font-family: serif;
+  >ul{
+    display: none;
+    flex-wrap: wrap;
+    a{
+      width: 50%;
+    }
+    li{
+      text-align: center;
+      border: 1px solid #fff;
+      height: 48px;
+      padding: 12px 0;
+    }
+    @include md(){
+      display: flex;
+    }
+  }
 }
